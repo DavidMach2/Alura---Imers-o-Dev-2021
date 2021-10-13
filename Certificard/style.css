@@ -1,0 +1,228 @@
+/*================== importação da fonte roboto pelo Google apis ==================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*================== retangulo azul ==================*/
+body {
+  /*background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);*/
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/2184723-tecnologia-com-fundo-azul-escuro-gr%C3%A1tis-vetor.jpg');
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+Estilizar tag = chama-se a tag
+Estilizar uma classe = chama-se com um ponto + nome (.container)
+Estilizar um ID = chama-se com o # + nome (#teste)
+*/
+
+/*
+Classes são amis utilizadas para poder reaproveitar o código
+Já os IDS são para modificações muito especificas, que não se repetirão
+*/
+
+/*================== retangulo branco ==================*/
+.container {
+  margin: 64px; /*margem para os elementos que ficarão por fora desta div*/
+  color: #1c1c1c; /*cor do texto*/
+  background: #ecf4ff;
+  box-shadow: 6px 6px 6px #0e1d2f; /*sombra do retangulo*/
+  border-radius: 20px; /*raio das bordas - quanto maior o numero mais perto de um circulo*/
+  padding: 64px; /*margem para os elementos que ficarão dentro*/
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*================== header (img + div) ==================*/
+.redes-logo img {
+  display: inline-axis;
+  flex-direction: inline;
+  max-width: 40px;
+  max-height: 60px;
+  padding-top: 20px;
+  padding-right: 9px;
+  /*filter: invert(100%);*/
+}
+
+.perfil {
+  display: flex; /*flex box: alinhamento dos elementos*/
+}
+
+/*================== imagem do header ==================*/
+.perfil-foto {
+  border-radius: 460px; /*deixar redondo a imagem*/
+  max-height: 160px; /*altura máxima da imagem*/
+  box-shadow: 5px 5px 5px rgba(0, 0, 1, 0.55); /*adicionar efeitos de sombra em volta de um elemento*/
+}
+
+/*================== titulo do header ==================*/
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700; /*peso da fonte ROBOTO*/
+  font-size: 36px; /*tamanho da fonte*/
+}
+
+.titulo h3 {
+  font-weight: 400; /*peso da fonte ROBOTO*/
+  font-size: 24px; /*tamanho da fonte*/
+}
+
+.titulo h4 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*================== botao para alterar tema ==================*/
+.tema button {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 400px;
+  padding: 8px 16px; /*1°= distancia entre topo e em baixo - 2° distancia lado esquerdo e direito*/
+  background: #ecf4ff;
+  color: black;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #0e1d2f;
+}
+
+/*================== Projetos na main ==================*/
+.portfolio {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.projetos {
+  max-height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column; /*direção dos elementos que estarão dentro*/
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  /*margin-top: 32px;*/
+  padding: 8px 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.conquistas {
+  height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*================== ul - Titulos dos Projetos na main ==================*/
+.projetos ul {
+  list-style: nome; /*remove estilos da lista - ul / li*/
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos li {
+  list-style-type: none; /* remove o ponto da lista*/
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none; /*remover o sublinhado de ancora do link*/
+}
+
+.conquistas ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.conquistas li {
+  list-style-type: none;
+}
+
+.conquistas img {
+  max-height: 100px;
+}
+
+/*================== Estilizar a troca de tema do JS da classe dark ==================*/
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+  /*background-image: url("https://lp.mentalidadeempreendedora.com.br/wp-content/uploads/2016/05/fundo-dark.jpg");*/
+}
+
+.dark .container {
+  background-image: url('https://image.freepik.com/fotos-gratis/textura-de-concreto-escura_24837-320.jpg');
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  background: linear-gradient(236.85deg, #333439 27.26%, #000000 96.03%);
+  color: #f7f7f7;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 1.42);
+}
+
+.dark .conquistas {
+  background: linear-gradient(236.85deg, #333439 27.26%, #000000 96.03%);
+  color: #f7f7f7;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 1.42);
+}
+
+.dark .portfolio {
+  color: #1c1c1c;
+}
+
+.dark .projetos-item a {
+  color: #f7f7f7;
+}
+
+.dark .tema button {
+  background-color: #1c1c1c;
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+}
+
+.dark .redes-logo img {
+  display: inline-axis;
+  flex-direction: inline;
+  max-width: 40px;
+  max-height: 60px;
+  padding-top: 20px;
+  padding-right: 9px;
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 1.8px solid #1c1c1c;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecf4ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf4ff;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
+}
