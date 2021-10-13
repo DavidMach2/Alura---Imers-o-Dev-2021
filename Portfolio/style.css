@@ -1,0 +1,64 @@
+/*================== importação da fonte roboto pelo Google apis ==================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*================== retangulo azul ==================*/
+body {
+  /*background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);*/
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/2184723-tecnologia-com-fundo-azul-escuro-gr%C3%A1tis-vetor.jpg');
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+Estilizar tag = chama-se a tag
+Estilizar uma classe = chama-se com um ponto + nome (.container)
+Estilizar um ID = chama-se com o # + nome (#teste)
+*/
+
+/*
+Classes são amis utilizadas para poder reaproveitar o código
+Já os IDS são para modificações muito especificas, que não se repetirão
+*/
+
+/*================== retangulo branco ==================*/
+.container {
+  margin: 64px; /*margem para os elementos que ficarão por fora desta div*/
+  color: #1c1c1c; /*cor do texto*/
+  background: #ecf4ff;
+  box-shadow: 6px 6px 6px #0e1d2f; /*sombra do retangulo*/
+  border-radius: 20px; /*raio das bordas - quanto maior o numero mais perto de um circulo*/
+  padding: 64px; /*margem para os elementos que ficarão dentro*/
+}
+
+/*================== header (img + div) ==================*/
+.perfil {
+  display: flex; /*flex box: alinhamento dos elementos*/
+  align-items: center;
+}
+
+/*================== imagem do header ==================*/
+.perfil-foto {
+  border-radius: 460px; /*deixar redondo a imagem*/
+  max-height: 160px; /*altura máxima da imagem*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*adicionar efeitos de sombra em volta de um elemento*/
+}
+
+/*================== titulo do header ==================*/
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700; /*peso da fonte ROBOTO*/
+  font-size: 36px; /*tamanho da fonte*/
+}
+
+.titulo h3 {
+  font-weight: 400; /*peso da fonte ROBOTO*/
+  font-size: 24px; /*tamanho da fonte*/
+}
+
+/*================== Projetos na main ==================*/
+.projetos {
+  display: flex;
+  flex-direction: column; /*direção dos elementos que estarão dentro*/
+}
